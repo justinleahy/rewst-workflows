@@ -7,4 +7,4 @@
 ## v1.1
 
 - [ ] Add an option to use single or double quotes. Right now only double quotes are supported
-- [ ] Verify compatibility with Jinja `|csv` filter
+- [x] Verify compatibility with Jinja `|csv` filter
