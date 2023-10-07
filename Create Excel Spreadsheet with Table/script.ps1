@@ -24,6 +24,7 @@ $Excel_Column_Number = ($Data[0] | Get-Member -MemberType Properties).Count
 $Excel_Column = ConvertTo-ExcelColumn -Number $Excel_Column_Number
 $Excel_Range = "A1:" + $Excel_Column + ($Data.Length + 1)
 
+# Reference 2
 $Required_Paths = @("C:\Windows\SysWOW64\config\systemprofile\Desktop", "C:\Windows\System32\config\systemprofile\Desktop")
 
 foreach($Path in $Required_Paths) {
@@ -32,6 +33,7 @@ foreach($Path in $Required_Paths) {
     }
 }
 
+# Reference 1
 $Excel = New-Object -ComObject Excel.Application
 $Excel.Visible = $false
 $Excel.DisplayAlerts = $false
